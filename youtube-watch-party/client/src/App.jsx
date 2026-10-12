@@ -2,8 +2,9 @@ import React from "react";
 import { useCallback, useEffect, useRef, useState } from "react";
 import { io } from "socket.io-client";
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL || "http://localhost:3000";
-
+const SERVER_URL =
+  import.meta.env.VITE_SERVER_URL ||
+  "https://youtube-watch-party-1-a19x.onrender.com";
 function getYouTubeId(value) {
   if (!value) return null;
   const input = value.trim();
