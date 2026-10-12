@@ -7,14 +7,25 @@ const crypto = require("crypto");
 const app = express();
 const server = http.createServer(app);
 const PORT = process.env.PORT || 3000;
-const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || "http://localhost:5173";
 
-app.use(cors({ origin: CLIENT_ORIGIN }));
+const CLIENT_ORIGIN =
+  process.env.CLIENT_ORIGIN ||
+  "https://youtube-watch-party-frontend-5dmm.onrender.com";
+
+app.use(cors({
+  origin: CLIENT_ORIGIN,
+  methods: ["GET", "POST"]
+}));
+
 app.use(express.json());
 
 const io = new Server(server, {
-  cors: { origin: CLIENT_ORIGIN, methods: ["GET", "POST"] }
+  cors: {
+    origin: CLIENT_ORIGIN,
+    methods: ["GET", "POST"]
+  }
 });
+
 
 // In-memory MVP: rooms disappear when the server restarts.
 const rooms = new Map();
