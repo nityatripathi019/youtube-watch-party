@@ -6,7 +6,7 @@ A real-time YouTube Watch Party application that allows multiple users to watch 
 Watch YouTube videos together in real time with friends using a shared room.
 ## Project Screenshot
 
-![Project Screenshot](./Screenshot 2026)
+![Project Screenshot](https://your-image-url.png)
 
 ## 🌐 Live Demo
 
