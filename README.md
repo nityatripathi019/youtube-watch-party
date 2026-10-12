@@ -2,6 +2,12 @@
 
 A real-time YouTube Watch Party application that allows multiple users to watch YouTube videos together in a shared room with synchronized playback controls.
 
+# 🎬 Watch Party Preview
+Watch YouTube videos together in real time with friends using a shared room.
+## Project Screenshot
+
+![Project Screenshot](./Screenshot 2026)
+
 ## 🌐 Live Demo
 
 - **Frontend:** https://youtube-watch-party-frontend-5dmm.onrender.com
